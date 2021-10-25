@@ -26,6 +26,7 @@ services:
       - '9000'
     volumes:
       - ./src:/var/www/symfony_docker
+      - ~/.ssh:/var/www/.ssh/
     depends_on:
       - symfony-db
     networks:
